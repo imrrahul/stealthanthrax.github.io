@@ -626,14 +626,14 @@
                     </div>
                         <div class="col-lg-4">
                         <div class="float-left float_none mt-2 mb-2" id="hit_div">
-                            <div class="copy-rights text-muted mb-0" id="hit_counter" style="display:inline;">
+                            <!-- <div class="copy-rights text-muted mb-0" id="hit_counter" style="display:inline;">
                                 <span class="digit" id="6_digit">0</span>
                                 <span class="digit" id="5_digit"></span>
                                 <span class="digit" id="4_digit"></span>
-                                <!-- <span class="digit" id="3_digit">6</span>
+                                 <span class="digit" id="3_digit">6</span>
                                 <span class="digit" id="2_digit">3</span>
-                                <span class="digit" id="1_digit">1</span> -->
-                            </div>
+                                <span class="digit" id="1_digit">1</span> 
+                            </div> -->
                             <p class="copy-rights text-muted mb-0" id="visitor_text">Visitor Count</p>
                         </div>
                     </div>
@@ -708,26 +708,34 @@
                 });
                 } // End if
             });
-            if (localStorage.pagecount)
-                {
-                localStorage.pagecount=Number(localStorage.pagecount) +1;
-                }
-                else
-                {
-                localStorage.pagecount=1;
-                }
-                var s = localStorage.pagecount + '';
-                console.log(s);
-                if(s[2]){
-                    document.getElementById("6_digit").innerText=s[2];
-                } else  {
-                    document.getElementById("6_digit").innerText=0;
-                }
-                document.getElementById("5_digit").innerText=s[0];
-                document.getElementById("4_digit").innerText=s[1];
+            // if (localStorage.pagecount)
+            //     {
+            //     localStorage.pagecount=Number(localStorage.pagecount) +1;
+            //     }
+            //     else
+            //     {
+            //     localStorage.pagecount=1;
+            //     }
+            //     var s = localStorage.pagecount + '';
+            //     console.log(s);
+            //     if(s[2]){
+            //         document.getElementById("6_digit").innerText=s[2];
+            //     } else  {
+            //         document.getElementById("6_digit").innerText=0;
+            //     }
+            //     document.getElementById("5_digit").innerText=s[0];
+            //     document.getElementById("4_digit").innerText=s[1];
                 
                 // console.log("Visits: " + localStorage.pagecount + " time(s).");
         </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128233227-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128233227-1');
+</script>
     </body>
 </html>
-
