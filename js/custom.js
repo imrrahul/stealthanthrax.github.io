@@ -102,5 +102,3 @@ $(window).on("scroll", function () {
     }, !1)
 };
 
-console.log("Hello World");
-
